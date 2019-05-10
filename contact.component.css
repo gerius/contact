@@ -1,0 +1,93 @@
+.main{
+	background: url(../../assets/rawpixel-676878-unsplash.jpg) top center fixed;
+	background-size: cover;
+	width:100%;
+	height: auto;
+}
+.writeus {
+    max-width:500px;
+	width:100%;
+	margin:0 auto;
+	padding-top:10px;
+
+}
+
+
+#contact {
+	background:rgba(0, 0, 0, 0.7);
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: rgb(255, 255, 255);
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+
+fieldset {
+	border: medium none !important;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	padding:10px;
+	border:1px solid #AAA;
+}
+
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+
+	width:100%;
+	border:none;
+	background:rgb(0, 98, 211);
+	color:#FFF;
+	padding:10px;
+	font-size:15px;
+	border:1px solid rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.user,.mailing,.writing{
+	position: relative;
+	float: right;
+	margin-right: 5px;
+	margin-top:-35px;
+	z-index: 5;	
+}
+.writing{margin-top:-100px;}
+
+.info{
+	font-family: ubuntu;
+	font-size: 1.2em;
+	max-width: 500px;
+	width:100%;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top:-50px;
+	padding: 20px;
+}
+.info>*{
+	margin-top: 10px;
+}
+@media (max-width: 768px){
+	.info{
+		font-size: 1em;
+	}
+}

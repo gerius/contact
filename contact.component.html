@@ -1,0 +1,35 @@
+<div class="main">
+  <div class="writeus">  
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" id="contact" >
+  
+      <h3>Ecrivez nous un message</h3>
+      <div class="form-group">
+      <fieldset>  
+        <input placeholder="Votre Nom*" type="text" id="nom" name="nom"   tabindex="1" ngModel required  > <img src="../../assets/ico/icons8_Contacts_64px.png" alt="" width="25" class="user">
+      </fieldset>
+      </div>
+      <div class="form-group">
+      <fieldset>
+        <input placeholder="Votre Address Email*" id="email" name="email"  type="email" tabindex="2" ngModel required> <img src="../../assets/ico/icons8_Important_Mail_50px.png" alt="" width="25" class="mailing">
+      </fieldset>
+      </div>
+      <div class="form-group">
+      <fieldset>
+        <textarea placeholder="Veuillez taper votre message*" id="message" name="message"  tabindex="5" ngModel required> </textarea><img src="../../assets/ico/icons8_Pencil_48px.png" alt="" width="25" class="writing">
+      </fieldset>
+      </div>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" [disabled]="f.invalid">Envoyer</button>
+      </fieldset>
+    </form>
+  </div>  
+  <div class="info">
+    Vous êtes interessé par ce que nous faisons ? Vous avez besoin d'informations supplémentaires ? Contactez nous...  
+    <div class="cont">
+      <img src="../../assets/ico/icons8_Phone_64px.png" alt="" width="35"> (+237) 656 345 791 / 679 989 340
+    </div>
+    <div class="mail">
+        <img src="../../assets/ico/icons8_Important_Mail_50px.png" alt="" width="35"> universaltech30@gmail.com
+      </div>
+  </div>
+</div>
